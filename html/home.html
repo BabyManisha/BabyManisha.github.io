@@ -4,20 +4,20 @@
 		<meta charset="UTF-8">
 		<title>SM Realestate</title>
 
-		<link rel="stylesheet" href='/css/bootstrap.min.css'/>
-		<link rel="stylesheet" href='/css/home.css'/>
+		<link rel="stylesheet" href='../css/bootstrap.min.css'/>
+		<link rel="stylesheet" href='../css/home.css'/>
 
-		<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
 
 		<script type="text/javascript" charset="utf-8" language="javascript" 
-			src="/js/jquery.min.js">
+			src="../js/jquery.min.js">
 		</script>
 		<script type="text/javascript" charset="utf-8" language="javascript" 
-			src="/js/bootstrap.min.js"></script>
+			src="../js/bootstrap.min.js"></script>
 		<script type="text/javascript" charset="utf-8" language="javascript" 
-			src="/js/vue.js"></script>
+			src="../js/vue.js"></script>
 		<script type="text/javascript" charset="utf-8" language="javascript" 
-			src="/js/home.js"></script>
+			src="../js/home.js"></script>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -113,7 +113,7 @@
 			<div class="carousel-inner">
 			    <div class="item" v-for="im in homeImages" 
 			    v-bind:class="im == currentImage ? 'active' : ''">
-			    	<img src="/images/{{im}}" alt="First slide">
+			    	<img src="../images/{{im}}" alt="First slide">
                     <!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
@@ -164,7 +164,7 @@
     <div class="row">
       <div class="col-sm-6 col-md-3" v-for="rp in recentProps | filterBy recentPropsSearchKey">
         <div class="thumbnail">
-          <img src="/images/{{rp.img}}" alt="...">
+          <img src="../images/{{rp.img}}" alt="...">
           <div class="caption">
             <h4>{{rp.address}}</h4>
             <p class="row">
@@ -220,7 +220,7 @@
 					</div>
 					<div class="row">
 						<div class="col">
-							<img class="app-img" src="/images/{{bp.img}}">
+							<img class="app-img" src="../images/{{bp.img}}">
 						</div>
 						<div class="col">
 							<span>Type : {{bp.type | capitalize}}</span><br/>
@@ -233,7 +233,7 @@
 							<span>Est. Payment: {{bp.estprice}}</span>
 						</div>
 						<div class="col">
-							<img class="app-img map-img" src="/images/maps.jpg"><br>
+							<img class="app-img map-img" src="../images/maps.jpg"><br>
 							<span class="map-span"><a>Click to to View Near by Places</a></span>
 						</div>
 						<div class="col">
@@ -289,7 +289,7 @@
     <div class="row">
       <div class="col-sm-6 col-md-3" v-for="rp in rentProps | filterBy rentPropsSearchKey">
         <div class="thumbnail">
-          <img src="/images/{{rp.img}}" alt="...">
+          <img src="../images/{{rp.img}}" alt="...">
           <div class="caption">
             <h4>{{rp.address}}</h4>
             <p class="row">
@@ -398,7 +398,7 @@
 	<div class="prop-div row">
 		<div class="col">
 			<h3 v-text="selectedProp.address"></h3>
-			<img class="app-img-2x" src="/images/{{selectedProp.img}}"><br>
+			<img class="app-img-2x" src="../images/{{selectedProp.img}}"><br>
 			<h4 class="row head">Near by Places : </h4>
 		</div>
 		<div class="col">
